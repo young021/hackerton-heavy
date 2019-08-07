@@ -1,0 +1,196 @@
+{% load static %}
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+
+       
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/design.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/design.css' %}">
+    </head>
+    <body>
+      
+      
+      <div class="title" style="font-family: yg-jalnan;"><h2>heavydetail 페이지입니다.</h2></div>
+      <!--nav bar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  <br><br>
+
+
+
+
+
+<!--dropbar-->
+<div class="left">
+<div class="card-position3"><img class="card" src="{%static 'img/wall.png'%}" alt="..." class="rounded" style=" width:30rem; height:35rem; "></div>
+</div>
+
+<div class="container" style="width:60%; margin-left:40%; height:50%; ">
+<h2 style="font-family: yg-jalnan; margin-left:20%;  margin-bottom:5%; color:green;"  >가죽공예</h2>
+<br>
+
+
+<h3 style="font-family: yg-jalnan;"  >기간 </h3>
+
+
+<div class="row2" style="width:50rem;  "> 
+<div class="dropbar-position"><select class="custom-select custom-select-lg mb-3">
+      <option selected>기간을 선택하세요</option>
+      <option value="1">한달</option>
+      <option value="2">두달</option>
+      <option value="3">세달</option>
+  </select>
+</div></div>
+
+
+
+  <h3 style="font-family: yg-jalnan;"  >디자인 선택</h3>
+  
+  
+  <div class="row2" style="width:50rem;  "> 
+  <div class="dropbar-position"><select class="custom-select custom-select-lg mb-3">
+        <option selected>디자인을 선택하세요</option>
+        <option value="1">------</option>
+        <option value="2">------</option>
+        <option value="3">------</option>
+    </select>
+  </div></div> 
+
+
+
+
+  
+    <h3 style="font-family: yg-jalnan;"  >요금 선택</h3>
+    
+    
+    <div class="row2" style="width:50rem;  "> 
+    <div class="dropbar-position"><select class="custom-select custom-select-lg mb-3">
+          <option selected>요금을 선택하세요</option>
+          <option value="1">------</option>
+          <option value="2">------</option>
+          <option value="3">------</option>
+      </select>
+    </div>
+    
+    
+    </div>
+
+
+<!--결재 구매 버튼 -->
+<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="margin-left:60%; ">찜하기</a>
+<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">바로구매하기</a>
+<br><br><br>
+</div>
+
+</div>
+
+<!-- <div class="dropdown" style="margin-bottom:400%; margin-left : 70%; width:40rem;">
+<button class="btn btn-default dropdown-toggle" id="mystatus" value="title" type="button" data-toggle="dropdown" aria-expanded="true">
+제목
+<span class="caret"></span>
+</button>
+<ul id="mytype" class="dropdown-menu" role="menu" aria-labelledby="searchType">
+<li role="presentation">
+<a role="menuitem" tabindex="-1" href="#" value="a">A</a>
+</li>
+<li role="presentation">
+<a role="menuitem" tabindex="-1" href="#" value="b">B</a>
+</li>
+<li role="presentation">
+<a role="menuitem" tabindex="-1" href="#" value="c">C</a>
+</li>
+</ul>
+</div> -->
+
+
+  <!--이건 자바스트립트로 구현 : 백역할 !-->
+    <!-- $('#mytype li > a').on('click', function() {
+      // 버튼에 선택된 항목 텍스트 넣기 
+      $('#mystatus').text($(this).text());
+          
+      // 선택된 항목 값(value) 얻기
+      alert($(this).attr('value'));
+  }); -->
+   
+
+  <br><br><br><br><br><br>
+
+<div class="margin-left">
+  <h4 style="font-family: yg-jalnan; ">-서울권 ㅁㅁ 공방-
+</h4>
+<br>
+<a>평소에는 할 수 없었던 특별한 취미활동 가죽공예를 위한 수강권을 살 수 있습니다.
+자신의 거주지역과 시간을 선택해서 가장 가까운 곳에서 즐거운 취미를 즐겨보세요.
+</a> 
+<br><br><br>
+<br><br>
+<div class="card-position3"><img src="{%static 'background.png'%}" alt="..." class="rounded" style="  width:50rem; height:35rem;"></div>
+  <br><br><br><br>
+<div class="card-position3"><img src="{%static 'background.png'%}" alt="..." class="rounded" style=" width:50rem; height:35rem;"></div></div>
+    </body>
+    </html>
+     
+
+  <!-- <img src="{%static 'background.png'%}" height=500 alt=""> -->
+  
+      
+    
+
+
+
+
+  
+  
+  
+
+      
+
+    
+  
+
+
+
+
+   
+              
+
+
+
+
+
+
+
+
+
+
+
+              
